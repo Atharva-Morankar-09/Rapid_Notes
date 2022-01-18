@@ -3,7 +3,7 @@ console.log("RAPID NOTES");
 showNotes();
 
 // If user adds a note then store it in the local storages
-
+// Add function
 let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener("click", function (e) {
     let addTitle = document.getElementById('addTitle');
@@ -58,6 +58,7 @@ function showNotes() {
 }
 
 // Function to delete notes
+// Delete function
 function deleteNote(index) {
     // console.log("Deleting", index);
     let notes = localStorage.getItem("notes");
@@ -72,6 +73,7 @@ function deleteNote(index) {
     showNotes();
 }
 
+// Search function
 let search = document.getElementById('srchTxt');
 search.addEventListener("input", function () {
     let inputVal = search.value.toLowerCase();
