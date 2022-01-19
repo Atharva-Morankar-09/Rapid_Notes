@@ -29,6 +29,7 @@ addBtn.addEventListener("click", function (e) {
 
 
 // To display all notes using localstorage
+// Show function
 function showNotes() {
     let notes = localStorage.getItem("notes");
     if (notes == null) {
